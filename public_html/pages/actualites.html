@@ -1,0 +1,71 @@
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Actualités &amp; Analyses</div>
+      <h1>Finance d'entreprise :<br><strong>nos analyses terrain.</strong></h1>
+      <p>Des prises de position concrètes sur les enjeux de la finance opérationnelle — rédigées par des experts qui vivent ces situations au quotidien avec leurs clients.</p>
+      <p class="page-hero-links">Pour aller plus loin : <a href="/interventions">nos interventions de DAF de transition</a> et <a href="/cabinet">le cabinet</a>.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <!-- Le contenu est injecté dynamiquement par loadArticles() (script.js) :
+           état de chargement, cartes d'articles (Supabase + fallback local) ou message d'erreur. -->
+      <div class="news-bubbles" id="news-container"></div>
+
+      <!-- États gérés par JS (chargement / erreur). Masqués au départ. -->
+      <style>
+        .news-state{display:none;width:100%;text-align:center;color:var(--gray);
+          padding:48px 16px;min-height:200px;grid-column:1 / -1;}
+        .news-state.is-visible{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;}
+        .news-state .news-spinner{width:28px;height:28px;border-radius:50%;
+          border:3px solid var(--border);border-top-color:var(--accent,#26325A);
+          animation:newsspin .8s linear infinite;margin-bottom:4px;}
+        @keyframes newsspin{to{transform:rotate(360deg);}}
+        .news-state .news-state-title{font-weight:600;color:var(--dark,#26325A);}
+        .news-state .news-retry{margin-top:12px;padding:8px 18px;border:1px solid var(--border);
+          border-radius:8px;background:transparent;color:var(--dark,#26325A);cursor:pointer;font:inherit;}
+        .news-state .news-retry:hover{background:var(--border);}
+        .news-fallback-notice{grid-column:1 / -1;width:100%;box-sizing:border-box;
+          margin-bottom:24px;padding:12px 16px;border:1px solid var(--border);
+          border-left:3px solid #e0a800;border-radius:8px;background:rgba(224,168,0,.06);
+          color:var(--gray);font-size:.92rem;}
+      </style>
+
+      <!-- FAQ Actualités -->
+      <div style="margin-top:64px;padding-top:48px;border-top:1px solid var(--border);">
+        <div class="text-center" style="margin-bottom:32px;">
+          <div class="section-label">Questions de fond</div>
+          <h2 class="section-title" style="font-size:1.6rem;">Ce que nos analyses répondent</h2>
+        </div>
+        <div class="faq-list" style="margin-top:0;">
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que la finance opérationnelle ?</div>
+            <div class="faq-a">La finance opérationnelle, c'est la finance qui produit et agit — par opposition à la finance de reporting ou de conseil abstrait. Elle couvre la trésorerie, le contrôle de gestion, la comptabilité en temps réel, la direction financière opérationnelle. C'est la finance qui fait tourner l'entreprise au quotidien.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Quand est-il pertinent de faire appel à un DAF externe ?</div>
+            <div class="faq-a">Un DAF externe (ou de transition) est pertinent quand le poste est vacant, quand la crise nécessite une expertise que l'équipe interne n'a pas, quand une opération stratégique (levée de fonds, M&A, cession) approche, ou simplement quand le coût d'un DAF en CDI n'est pas justifié pour la taille de l'entreprise.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Le BFR peut-il vraiment libérer de la trésorerie sans nouvel emprunt ?</div>
+            <div class="faq-a">Oui. Le BFR est un levier interne souvent sous-exploité. En réduisant le DSO (délai de paiement clients), en optimisant la rotation des stocks et en renégociant les délais fournisseurs, il est possible de libérer plusieurs centaines de milliers d'euros — sans recourir au crédit bancaire. Naaxos a réalisé +2M€ pour un client distribution en 4 mois.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Faut-il un ERP pour avoir un bon pilotage financier ?</div>
+            <div class="faq-a">Non. Un ERP est un outil puissant mais pas indispensable pour démarrer. Naaxos met en place des tableaux de bord fiables avec des outils simples (Excel, Power BI, outils comptables) en quelques semaines. L'ERP vient ensuite, si l'entreprise en a besoin, avec une préparation métier en amont.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="related-services">
+      <h3>En relation</h3>
+      <ul>
+        <li><a href="/interventions">Nos interventions</a></li>
+        <li><a href="/cabinet">Le cabinet</a></li>
+        <li><a href="/contact">Prendre rendez-vous</a></li>
+      </ul>
+    </section>
+  </div>
