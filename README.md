@@ -1,14 +1,14 @@
 # Naaxos — Full digital rebuild (website + database + admin)
 
-> A finance consulting firm's complete digital platform, rebuilt solo and shipped to production. Static front-end, serverless backend, security audited before launch.
+> A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo and shipped to production. Static front-end, serverless backend, security-audited before launch.
 
-**Live site:** https://www.naaxos.fr · **Case study:** https://dub.sh/lilian_miceli
+**Live:** https://www.naaxos.fr · **Case study:** https://dub.sh/lilian_miceli
 
 ---
 
 ## The problem
 
-Naaxos (operational finance — interim CFO, management control, Finance IT) ran an outdated static website: no structured way to collect leads, and content only a developer could change. The brief: rebuild everything — website, database, internal tools — solo, reporting directly to the CEO.
+Naaxos (operational finance — interim CFO, management control, Finance IT) ran an outdated static website: a frozen showcase, leads lost in email inboxes, and content only a developer could change. The brief: rebuild everything — website, database, internal tools — solo, reporting directly to the CEO. April → June 2026, shipped to production.
 
 ## What I built
 
@@ -49,6 +49,17 @@ Details in [`docs/AUDIT-SECURITE-FINAL-naaxos.md`](docs/AUDIT-SECURITE-FINAL-naa
 
 `HTML` · `CSS` · `JavaScript` (vanilla, SPA router) · `Supabase` (PostgreSQL, REST, RLS, Storage) · `Edge Functions` (Deno/TypeScript) · `Cloudflare Turnstile` · `Retool` · `Apache` · `Ionos`
 
+## Result
+
+Shipped to production in June 2026, replacing the previous site and removing the firm's developer dependency:
+
+- **Publishing an article:** ask a developer and wait → 5 minutes, by the CEO herself
+- **Incoming leads:** lost in email inboxes → captured and tracked in a structured CRM
+- **Tooling:** scattered across emails and spreadsheets → one Retool workspace (CRM, applications, newsletter, articles)
+
+> 💬 "Lilian took over our entire digital presence — website, database, internal tools — and delivered everything solo, to production, in three months. He quickly understands business needs and turns them into concrete solutions I use every day."
+> — Céline Pontier, CEO of Naaxos
+
 ## Repository layout
 
 ```
@@ -64,6 +75,8 @@ sql/                    Database setup + security hardening scripts
 docs/                   Security audit & deployment notes
 ```
 
+> This is a client project — the repo documents the architecture and decisions rather than offering a one-command setup (it's tied to Naaxos's Supabase project and host).
+
 ## What I'd add next
 
 Per-IP rate limiting in the Edge Function, an admin view served from Supabase Auth (to read data without the dashboard), and basic analytics on form conversion.
@@ -72,7 +85,7 @@ Per-IP rate limiting in the Edge Function, an admin view served from Supabase Au
 
 ### About
 
-Built by **Lilian Miceli** — I build web products end to end and ship them to production.
+Built by **Lilian Miceli** — I take work off a founder's plate and ship it to production, solo.
 [LinkedIn](https://www.linkedin.com/in/lilian-miceli-451ab0235/) · lilianmiceli38@gmail.com
 
-*Note: the public API (anon) key visible in `config.js` is a publishable key, safe to expose by design — its security relies on the Row Level Security policies above. No private keys are in this repository.*
+*Note: the public API (anon) key in `config.js` is a publishable key, safe to expose by design — its security relies on the Row Level Security policies above. No private keys are in this repository.*
