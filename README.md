@@ -43,7 +43,6 @@ I ran a **pentest-style audit** before going live and found a real flaw: with th
 - **CVs in private storage** — type/size checked server-side, not publicly accessible.
 - **Hosting hardened** — Apache rules blocking sensitive files + security headers.
 
-Details in [`docs/AUDIT-SECURITE-FINAL-naaxos.md`](docs/AUDIT-SECURITE-FINAL-naaxos.md).
 
 ## Tech stack
 
