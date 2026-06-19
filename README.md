@@ -2,7 +2,7 @@
 
 > A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo and shipped to production. Static front-end, serverless backend, security-audited before launch.
 
-**Live:** https://www.naaxos.fr · **Case study:** https://dub.sh/lilian_miceli
+**Live:** https://www.naaxos.fr · **Case study:** https://dub.sh/Naaxos-platform
 
 ---
 
