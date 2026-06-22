@@ -131,21 +131,21 @@ function scrollToCvForm() {
 ====================================================== */
 const PROJECTS = {
   'crise-tresorerie': {
-    tag: '🔴 Crise de trésorerie · BTP · 80 salariés',
-    title: 'Sortie de crise de trésorerie en 72h',
-    context: 'PME du BTP en situation critique : difficultés répétées à payer les fournisseurs, compte bancaire en alerte, dirigeant dépassé par la situation. Le cabinet partenaire a orienté vers Naaxos en urgence.',
+    tag: '🌍 Consolidation & titres · Groupe international',
+    title: 'Révision mondiale des actifs financiers (titres)',
+    context: 'Révision mondiale des actifs financiers (titres) avec contraintes multi-devises et validation CAC.',
     kpis: [
-      { num: '72h', label: 'Diagnostic réalisé' },
-      { num: '+900K€', label: 'Lignes négociées' },
-      { num: '3 mois', label: 'Stabilisation' },
+      { num: 'J+10', label: 'Renfort déployé' },
+      { num: '0', label: 'Rework majeur CAC' },
+      { num: '15j', label: 'Autonomie atteinte' },
     ],
     steps: [
-      { title: 'Diagnostic flash', desc: 'Analyse des flux entrants/sortants sur 90 jours, identification des risques immédiats, cartographie des créanciers prioritaires.' },
-      { title: 'Plan d\'action immédiat', desc: 'Priorisation des paiements, négociation d\'échelonnements avec les fournisseurs critiques, sécurisation des contrats en cours.' },
-      { title: 'Négociation bancaire', desc: 'Présentation d\'un dossier structuré aux partenaires bancaires. Obtention de 900K€ de lignes supplémentaires en moins d\'une semaine.' },
-      { title: 'Pilotage 90 jours', desc: 'Mise en place d\'un plan de trésorerie hebdomadaire, réunions de suivi bi-hebdomadaires avec la direction, formation de l\'équipe finance.' },
+      { title: 'Renfort express (J+10)', desc: 'Déploiement d\'une collaboratrice experte consolidation / grands comptes en moins de deux semaines.' },
+      { title: 'Cartographie des titres', desc: 'Recensement complet des titres par juridiction, devise et méthode d\'évaluation.' },
+      { title: 'Révision complète', desc: 'Retraitements FX, mise à la juste valeur et rapprochements intercos sur l\'ensemble du portefeuille.' },
+      { title: 'Coordination & dossier auditable', desc: 'Coordination transverse Finance Groupe, Consolidation, Trésorerie et CAC, avec production d\'un dossier auditable.' },
     ],
-    conclusion: 'La PME a évité la cessation de paiements. Six mois après la mission, la trésorerie est positive et le pilotage est internalisé.'
+    conclusion: 'Actifs révisés et validés dans les délais, 0 rework majeur côté CAC. Autonomie atteinte en 15 jours.'
   },
   'daf-transition': {
     tag: '🔄 DAF de transition · Retail · 250 salariés',
@@ -188,32 +188,33 @@ const PROJECTS = {
     kpis: [
       { num: '+2M€', label: 'Trésorerie libérée' },
       { num: '−18j', label: 'DSO réduit' },
-      { num: '4 mois', label: 'Mission' },
+      { num: '6 mois', label: 'Mission' },
     ],
     steps: [
       { title: 'Diagnostic BFR', desc: 'Analyse complète DSO (65j → 47j), DPO, rotation des stocks. Identification des 20% de clients qui expliquent 80% du problème.' },
-      { title: 'Plan d\'action clients', desc: 'Renégociation des conditions de paiement, mise en place d\'un processus de relance structuré, factoring sélectif.' },
-      { title: 'Optimisation des stocks', desc: 'Segmentation ABC des SKUs, réduction du stock de sécurité sur les lignes lentes. Stock optimisé de −20%.' },
-      { title: 'Pilotage hebdomadaire', desc: 'Tableau de bord BFR quotidien, alertes automatiques sur les dépassements, reporting mensuel pour la direction.' },
+      { title: 'Plan d\'actions crédit clients', desc: 'Réécriture des processus de crédit clients, mise en place d\'un comité de crédits avec animation des premières réunions, refonte des suivis et implication de l\'équipe commerciale.' },
+      { title: 'Optimisation des stocks', desc: 'Optimisation des stocks en lien avec les services concernés : segmentation ABC, réduction du stock de sécurité sur les lignes lentes.' },
+      { title: 'Tableaux de bord à 3 niveaux', desc: 'Construction de tableaux de bord opérationnel, tactique et stratégique, dont un tableau de bord trésorerie avec anticipation des dépassements.' },
+      { title: 'Pilotage, formation & passation', desc: 'Accompagnement de l\'équipe finance au déploiement, formation du personnel et passation des outils de pilotage.' },
     ],
-    conclusion: '2M€ de trésorerie libérée en 4 mois. La PME a pu financer son développement sans recourir au crédit bancaire.'
+    conclusion: '2M€ de trésorerie libérée sur une mission de 6 mois. La PME a pu financer son développement sans recourir au crédit bancaire, avec une équipe désormais autonome sur le pilotage.'
   },
   'levee-fonds': {
-    tag: '💰 Levée de fonds · Tech / SaaS · Série A',
-    title: 'Structuration & levée de 5M€ en 6 semaines',
-    context: 'Start-up SaaS en forte croissance, sans CFO, face à des investisseurs institutionnels exigeants. Le fondateur gérait seul la finance avec des outils inadaptés. La data room était inexistante.',
+    tag: '💻 Finance IT · SAP FI/CO',
+    title: 'Transformation digitale finance & fiabilisation SAP',
+    context: 'Transformation digitale de la fonction finance, fiabilisation de SAP et montée en compétences des équipes. Paramétrages SAP incomplets, erreurs comptables récurrentes, manque de key user et instabilité du système d\'information.',
     kpis: [
-      { num: '5M€', label: 'Levée réalisée' },
-      { num: '6 sem.', label: 'Structuration' },
-      { num: '3', label: 'Term sheets reçus' },
+      { num: '−70 à 85%', label: 'Anomalies comptables' },
+      { num: '100%', label: 'Paramètres critiques fiabilisés' },
+      { num: '2', label: 'Key users opérationnels' },
     ],
     steps: [
-      { title: 'Audit finance & métriques', desc: 'Reconstruction de l\'historique financier sur 3 ans. Mise en place des métriques SaaS : ARR, MRR, churn, CAC, LTV.' },
-      { title: 'Business plan financier', desc: 'Modélisation financière sur 5 ans avec 3 scénarios. Hypothèses documentées et defensibles face aux investisseurs.' },
-      { title: 'Data room complète', desc: 'Constitution de la data room : légal, financial, commercial, RH. Due diligence préparée à l\'avance pour accélérer la clôture.' },
-      { title: 'Accompagnement roadshow', desc: 'Préparation des pitchs financiers, simulation des questions investisseurs, support pendant les négociations.' },
+      { title: 'Déploiement & audit SAP FI/CO', desc: 'Directrice comptable / experte SAP déployée 9 mois. Audit des schémas, immobilisations, taxes, cut-off et workflows.' },
+      { title: 'Correction des paramètres critiques', desc: 'Correction des paramétrages défaillants en coordination avec la DSI et l\'intégrateur.' },
+      { title: 'Stabilisation du SI', desc: 'Campagnes de tests, documentation et sécurisation des flux comptables.' },
+      { title: 'Formation & key users', desc: 'Montée en compétences des équipes et création de 2 key users autonomes.' },
     ],
-    conclusion: '3 term sheets reçus. Levée de 5M€ bouclée en 6 semaines. L\'investisseur principal a salué la qualité du dossier financier.'
+    conclusion: 'Anomalies comptables réduites de 70 à 85 %, 100 % des paramètres critiques fiabilisés et 2 key users désormais opérationnels.'
   },
   'ma': {
     tag: '🤝 M&A · Services B2B · 30M€ CA',
@@ -233,9 +234,9 @@ const PROJECTS = {
     conclusion: 'Intégration réalisée en 5 mois contre 12 mois estimés initialement. 30% d\'économies sur les coûts de structure réalisées dès la première année.'
   },
   'schneider': {
-    tag: '⚡ Énergie & Environnement · Schneider Electric',
-    title: 'Projet Schneider : Contrôle de gestion & reporting RSE',
-    context: 'Naaxos a été sollicité par une filiale Schneider Electric pour structurer le contrôle de gestion d\'un programme d\'efficacité énergétique et mettre en place le reporting extra-financier requis par les investisseurs institutionnels.',
+    tag: '⚡ Énergie & Environnement · Contrôle de gestion',
+    title: 'Mission de contrôle de gestion & reporting RSE',
+    context: 'Naaxos a été sollicité par un acteur du secteur de l\'énergie pour structurer le contrôle de gestion d\'un programme d\'efficacité énergétique et mettre en place le reporting extra-financier requis par les investisseurs institutionnels.',
     kpis: [
       { num: '12', label: 'Sites pilotés' },
       { num: '100%', label: 'KPIs RSE tracés' },
@@ -247,7 +248,7 @@ const PROJECTS = {
       { title: 'Reporting extra-financier', desc: 'Construction d\'un dashboard ESG conforme aux standards requis : émissions CO2, économies d\'énergie réalisées, ROI par programme.' },
       { title: 'Formation des équipes', desc: 'Formation des responsables de site et du contrôleur de gestion groupe sur les nouveaux outils.' },
     ],
-    conclusion: 'Le programme dispose désormais d\'un pilotage financier rigoureux aligné avec les exigences des investisseurs ESG. Référence Schneider Electric depuis 2024.'
+    conclusion: 'Le programme dispose désormais d\'un pilotage financier rigoureux aligné avec les exigences des investisseurs ESG.'
   },
   'sante': {
     tag: '🩺 Santé & Médico-social · Groupe de cliniques',

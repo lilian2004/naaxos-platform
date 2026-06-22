@@ -2,7 +2,7 @@
 
 > A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo, production-ready (client go-live pending). Static front-end, serverless backend, security-audited before launch.
 
-**Demo:** https://naaxos-demo-lilian.netlify.app *(client go-live pending)* · **Case study:** https://dub.sh/Naaxos-platform
+**Demo:** https://naaxos-demo-lilian.netlify.app *(client go-live pending)* · **Case study:** https://dub.sh/lilian_miceli
 
 ---
 
@@ -42,6 +42,8 @@ I ran a **pentest-style audit** before going live and found a real flaw: with th
 - **Writes moved behind an Edge Function** — server-side validation + CAPTCHA (Cloudflare Turnstile); the privileged key never reaches the browser.
 - **CVs in private storage** — type/size checked server-side, not publicly accessible.
 - **Hosting hardened** — Apache rules blocking sensitive files + security headers.
+
+Details in [`docs/AUDIT-SECURITE-FINAL-naaxos.md`](docs/AUDIT-SECURITE-FINAL-naaxos.md).
 
 ## Tech stack
 
