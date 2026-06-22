@@ -1,14 +1,14 @@
 # Naaxos — Full digital rebuild (website + database + admin)
 
-> A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo and shipped to production. Static front-end, serverless backend, security-audited before launch.
+> A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo, production-ready (client go-live pending). Static front-end, serverless backend, security-audited before launch.
 
-**Live:** https://www.naaxos.fr · **Case study:** https://dub.sh/Naaxos-platform
+**Demo:** https://naaxos-demo-lilian.netlify.app *(client go-live pending)* · **Case study:** https://dub.sh/lilian_miceli
 
 ---
 
 ## The problem
 
-Naaxos (operational finance — interim CFO, management control, Finance IT) ran an outdated static website: a frozen showcase, leads lost in email inboxes, and content only a developer could change. The brief: rebuild everything — website, database, internal tools — solo, reporting directly to the CEO. April → June 2026, shipped to production.
+Naaxos (operational finance — interim CFO, management control, Finance IT) ran an outdated static website: a frozen showcase, leads lost in email inboxes, and content only a developer could change. The brief: rebuild everything — website, database, internal tools — solo, reporting directly to the CEO. April → June 2026; built production-ready, client go-live pending.
 
 ## What I built
 
@@ -43,6 +43,7 @@ I ran a **pentest-style audit** before going live and found a real flaw: with th
 - **CVs in private storage** — type/size checked server-side, not publicly accessible.
 - **Hosting hardened** — Apache rules blocking sensitive files + security headers.
 
+Details in [`docs/AUDIT-SECURITE-FINAL-naaxos.md`](docs/AUDIT-SECURITE-FINAL-naaxos.md).
 
 ## Tech stack
 
@@ -50,13 +51,13 @@ I ran a **pentest-style audit** before going live and found a real flaw: with th
 
 ## Result
 
-Shipped to production in June 2026, replacing the previous site and removing the firm's developer dependency:
+Built solo and delivered to the client in June 2026 — production-ready, client go-live pending. Designed to remove the firm's developer dependency:
 
 - **Publishing an article:** ask a developer and wait → 5 minutes, by the CEO herself
 - **Incoming leads:** lost in email inboxes → captured and tracked in a structured CRM
 - **Tooling:** scattered across emails and spreadsheets → one Retool workspace (CRM, applications, newsletter, articles)
 
-> 💬 "Lilian took over our entire digital presence — website, database, internal tools — and delivered everything solo, to production, in three months. He quickly understands business needs and turns them into concrete solutions I use every day."
+> 💬 "Lilian took over our entire digital presence — website, database, internal tools — and delivered everything solo, end to end, in three months. He quickly understands business needs and turns them into concrete solutions."
 > — Céline Pontier, CEO of Naaxos
 
 ## Repository layout
