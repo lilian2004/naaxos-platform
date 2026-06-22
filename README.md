@@ -2,7 +2,7 @@
 
 > A finance consulting firm's complete digital presence — website, database, CRM — rebuilt solo, production-ready (client go-live pending). Static front-end, serverless backend, security-audited before launch.
 
-**Demo:** https://naaxos-demo-lilian.netlify.app *(client go-live pending)* · **Case study:** https://dub.sh/lilian_miceli
+**Demo:** https://naaxos-demo-lilian.netlify.app *(client go-live pending)* · **Case study:** https://dub.sh/Naaxos-platform
 
 ---
 
