@@ -1,0 +1,3 @@
+# Netlify — routage SPA : toute route inconnue sert index.html (200, sans changer l'URL).
+# (Équivalent du fallback SPA du .htaccess, qui lui n'est lu que par Ionos/Apache.)
+/*    /index.html   200

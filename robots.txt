@@ -1,0 +1,13 @@
+# robots.txt — Naaxos
+# https://www.naaxos.fr
+
+User-agent: *
+Allow: /
+
+# Fichiers techniques (inutiles à l'index, mais NE PAS bloquer /js/ ni /css/
+# ni /pages/ : Googlebot en a besoin pour faire le rendu JavaScript de la SPA)
+Disallow: /config.js
+Disallow: /config.local.js
+Disallow: /config.local.example.js
+
+Sitemap: https://www.naaxos.fr/sitemap.xml
